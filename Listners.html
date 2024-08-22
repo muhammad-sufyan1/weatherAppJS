@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="container" style="width: 150px; height: 150px; background-color: aqua;">Container 1</div>
+<div id="container1" style="width: 150px; height: 150px; background-color: rgb(17, 41, 41);">Container 2</div>
+
+
+
+
+
+
+<script>
+    let x = document.getElementById("container");
+    x.addEventListener("click", function(){
+       document.getElementById("container1").style.backgroundColor="red";
+    })
+    x.addEventListener("mouseover", function(){
+       document.getElementById("container1").style.backgroundColor="blue";
+       document.getElementById("container1").style.color="white";
+    })
+    x.addEventListener("mouseout", function(){
+       document.getElementById("container1").style.backgroundColor="gray";
+       document.getElementById("container1").style.color="black";
+    })
+
+</script>
+
+</body>
+</html>
